@@ -1,0 +1,31 @@
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<button type="button" class="btn btn-{{include.button_class}} active">{{include.button_name}} Button</button> -->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+
+<button id="dark-mode-button" class="dark-mode-button icon-before" onclick="toggleMode()">
+    <i class="fa-solid"></i>
+</button>
+
+<script>
+    function toggleMode() {
+        const body = document.body;
+        const button = document.getElementById('dark-mode-button');
+        body.classList.toggle('dark-mode');
+        button.classList.toggle('white-button');
+
+        if (button.classList.contains("icon-before")) {
+            button.classList.remove("icon-before");
+            button.classList.add("icon-after");
+        } else {
+            button.classList.remove("icon-after");
+            button.classList.add("icon-before");
+        }
+    }
+    
+    
+</script>

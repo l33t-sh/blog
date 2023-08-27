@@ -1,0 +1,60 @@
+---
+---
+
+body {
+    transition: background-color 0.3s;
+}
+
+.dark-mode-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 20%;
+    border-color: black;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-moon {
+    font-size: 32px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333; /* Dark mode background color */
+}
+
+.white-button {
+    color: white;
+    border-color: white;
+    background-color: gray;
+}
+
+.dark-mode-button.dark-mode {
+    background-color: #ae2a2a; /* Dark mode button background color */
+}
+
+/* Define the CSS classes for the different glyphs/icons */
+.icon-init::before {
+    content: "\f185"; /* Replace with the new glyph's Unicode or font-awesome class */
+    font-family: FontAwesome; /* Replace with your icon font family */
+    font-size: 32px;
+  }
+
+.icon-before::before {
+    content: "\f186"; /* Replace with the initial glyph's Unicode or font-awesome class */
+    font-family: FontAwesome; /* Replace with your icon font family */
+    font-size: 32px;
+  }
+  
+  .icon-after::before {
+    content: "\f185"; /* Replace with the new glyph's Unicode or font-awesome class */
+    font-family: FontAwesome; /* Replace with your icon font family */
+    font-size: 32px;
+  }
